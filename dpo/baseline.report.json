@@ -1,0 +1,381 @@
+{
+  "generatedAt": "2025-10-25T22:46:14.910Z",
+  "root": ".",
+  "detectedFramework": {
+    "framework": "auto",
+    "uiLibraries": []
+  },
+  "totals": {
+    "filesScanned": 201,
+    "findings": 28,
+    "nonCompliant": 28,
+    "analytics": 0,
+    "storage": 0
+  },
+  "findings": [
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 68,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"First name\"\n                  name=\"first_name\"\n                  required\n                  autoComplete=\"given-name\"\n                  data-testid=\"first-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 75,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"Last name\"\n                  name=\"last_name\"\n                  required\n                  autoComplete=\"family-name\"\n                  data-testid=\"last-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 131,
+      "type": "phone",
+      "snippet": "<Input\n                label=\"Phone\"\n                name=\"phone\"\n                autoComplete=\"phone\"\n                data-testid=\"phone-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "line": 133,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"First name\"\n                  name=\"first_name\"\n                  required\n                  autoComplete=\"given-name\"\n                  defaultValue={address.first_name || undefined}\n                  data-testid=\"first-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "line": 141,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"Last name\"\n                  name=\"last_name\"\n                  required\n                  autoComplete=\"family-name\"\n                  defaultValue={address.last_name || undefined}\n                  data-testid=\"last-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "line": 205,
+      "type": "phone",
+      "snippet": "<Input\n                label=\"Phone\"\n                name=\"phone\"\n                autoComplete=\"phone\"\n                defaultValue={address.phone || undefined}\n                data-testid=\"phone-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "line": 26,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            title=\"Enter a valid email address.\"\n            autoComplete=\"email\"\n            required\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "line": 35,
+      "type": "password",
+      "snippet": "<Input\n            label=\"Password\"\n            name=\"password\"\n            type=\"password\"\n            autoComplete=\"current-password\"\n            required\n            data-testid=\"password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "line": 105,
+      "type": "name",
+      "snippet": "<Input\n              label=\"First name\"\n              name=\"first_name\"\n              defaultValue={billingAddress?.first_name || undefined}\n              required\n              data-testid=\"billing-first-name-input\"\n            />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "line": 112,
+      "type": "name",
+      "snippet": "<Input\n              label=\"Last name\"\n              name=\"last_name\"\n              defaultValue={billingAddress?.last_name || undefined}\n              required\n              data-testid=\"billing-last-name-input\"\n            />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "line": 126,
+      "type": "phone",
+      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={billingAddress?.phone ?? customer?.phone ?? \"\"}\n            data-testid=\"billing-phone-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-email/index.tsx",
+      "line": 60,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            autoComplete=\"email\"\n            required\n            defaultValue={customer.email}\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-name/index.tsx",
+      "line": 59,
+      "type": "name",
+      "snippet": "<Input\n            label=\"First name\"\n            name=\"first_name\"\n            required\n            defaultValue={customer.first_name ?? \"\"}\n            data-testid=\"first-name-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-name/index.tsx",
+      "line": 66,
+      "type": "name",
+      "snippet": "<Input\n            label=\"Last name\"\n            name=\"last_name\"\n            required\n            defaultValue={customer.last_name ?? \"\"}\n            data-testid=\"last-name-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-password/index.tsx",
+      "line": 43,
+      "type": "password",
+      "snippet": "<Input\n            label=\"Old password\"\n            name=\"old_password\"\n            required\n            type=\"password\"\n            data-testid=\"old-password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-password/index.tsx",
+      "line": 50,
+      "type": "password",
+      "snippet": "<Input\n            label=\"New password\"\n            type=\"password\"\n            name=\"new_password\"\n            required\n            data-testid=\"new-password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-password/index.tsx",
+      "line": 57,
+      "type": "password",
+      "snippet": "<Input\n            label=\"Confirm password\"\n            type=\"password\"\n            name=\"confirm_password\"\n            required\n            data-testid=\"confirm-password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/profile-phone/index.tsx",
+      "line": 59,
+      "type": "phone",
+      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={customer.phone ?? \"\"}\n            data-testid=\"phone-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "line": 32,
+      "type": "name",
+      "snippet": "<Input\n            label=\"First name\"\n            name=\"first_name\"\n            required\n            autoComplete=\"given-name\"\n            data-testid=\"first-name-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "line": 39,
+      "type": "name",
+      "snippet": "<Input\n            label=\"Last name\"\n            name=\"last_name\"\n            required\n            autoComplete=\"family-name\"\n            data-testid=\"last-name-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "line": 46,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            required\n            type=\"email\"\n            autoComplete=\"email\"\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "line": 54,
+      "type": "phone",
+      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"tel\"\n            autoComplete=\"tel\"\n            data-testid=\"phone-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "line": 61,
+      "type": "password",
+      "snippet": "<Input\n            label=\"Password\"\n            name=\"password\"\n            required\n            type=\"password\"\n            autoComplete=\"new-password\"\n            data-testid=\"password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/checkout/components/billing_address/index.tsx",
+      "line": 33,
+      "type": "name",
+      "snippet": "<Input\n          label=\"First name\"\n          name=\"billing_address.first_name\"\n          autoComplete=\"given-name\"\n          value={formData[\"billing_address.first_name\"]}\n          onChange={handleChange}\n          required\n          data-testid=\"billing-first-name-input\"\n        />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/checkout/components/billing_address/index.tsx",
+      "line": 42,
+      "type": "name",
+      "snippet": "<Input\n          label=\"Last name\"\n          name=\"billing_address.last_name\"\n          autoComplete=\"family-name\"\n          value={formData[\"billing_address.last_name\"]}\n          onChange={handleChange}\n          required\n          data-testid=\"billing-last-name-input\"\n        />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/checkout/components/shipping-address/index.tsx",
+      "line": 114,
+      "type": "name",
+      "snippet": "<Input\n          label=\"First name\"\n          name=\"shipping_address.first_name\"\n          autoComplete=\"given-name\"\n          value={formData[\"shipping_address.first_name\"]}\n          onChange={handleChange}\n          required\n          data-testid=\"shipping-first-name-input\"\n        />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/checkout/components/shipping-address/index.tsx",
+      "line": 123,
+      "type": "name",
+      "snippet": "<Input\n          label=\"Last name\"\n          name=\"shipping_address.last_name\"\n          autoComplete=\"family-name\"\n          value={formData[\"shipping_address.last_name\"]}\n          onChange={handleChange}\n          required\n          data-testid=\"shipping-last-name-input\"\n        />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    },
+    {
+      "file": "src/modules/checkout/components/shipping-address/index.tsx",
+      "line": 195,
+      "type": "email",
+      "snippet": "<Input\n          label=\"Email\"\n          name=\"email\"\n          type=\"email\"\n          title=\"Enter a valid email address.\"\n          autoComplete=\"email\"\n          value={formData.email}\n          onChange={handleChange}\n          required\n          data-testid=\"shipping-email-input\"\n        />",
+      "status": "non-compliant",
+      "reason": "Missing consent or privacy notice",
+      "problems": [
+        {
+          "problem": "Non-compliant: Missing consent or privacy notice"
+        }
+      ]
+    }
+  ]
+}

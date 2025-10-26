@@ -1,0 +1,14 @@
+{
+  "framework": "nextjs",
+  "include": [
+    "**/*.{ts,tsx,js,jsx,html}"
+  ],
+  "exclude": [
+    "node_modules/**",
+    ".next/**",
+    "dist/**",
+    "build/**",
+    ".turbo/**",
+    "coverage/**"
+  ]
+}
