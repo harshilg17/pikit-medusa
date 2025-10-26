@@ -66,17 +66,23 @@ const AddAddress = ({
             <div className="flex flex-col gap-y-2">
               <div className="grid grid-cols-2 gap-x-2">
                 <Input
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   label="First name"
                   name="first_name"
                   required
                   autoComplete="given-name"
                   data-testid="first-name-input"
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 />
                 <Input
                   label="Last name"
                   name="last_name"
                   required
                   autoComplete="family-name"
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   data-testid="last-name-input"
                 />
               </div>
@@ -88,22 +94,30 @@ const AddAddress = ({
               />
               <Input
                 label="Address"
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 name="address_1"
                 required
                 autoComplete="address-line1"
                 data-testid="address-1-input"
               />
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               <Input
                 label="Apartment, suite, etc."
                 name="address_2"
                 autoComplete="address-line2"
                 data-testid="address-2-input"
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               />
               <div className="grid grid-cols-[144px_1fr] gap-x-2">
                 <Input
                   label="Postal code"
                   name="postal_code"
                   required
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   autoComplete="postal-code"
                   data-testid="postal-code-input"
                 />
@@ -115,6 +129,8 @@ const AddAddress = ({
                   data-testid="city-input"
                 />
               </div>
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               <Input
                 label="Province / State"
                 name="province"

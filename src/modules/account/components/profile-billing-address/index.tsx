@@ -92,6 +92,8 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
   return (
     <form action={formAction} onReset={() => clearState()} className="w-full">
       <input type="hidden" name="addressId" value={billingAddress?.id} />
+      {/* // added by PIKit: privacy notice */}
+      <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
       <AccountInfo
         label="Billing address"
         currentInfo={currentInfo}
@@ -101,17 +103,23 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
         data-testid="account-billing-address-editor"
       >
         <div className="grid grid-cols-1 gap-y-2">
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           <div className="grid grid-cols-2 gap-x-2">
             <Input
               label="First name"
               name="first_name"
               defaultValue={billingAddress?.first_name || undefined}
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               required
               data-testid="billing-first-name-input"
             />
             <Input
               label="Last name"
               name="last_name"
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               defaultValue={billingAddress?.last_name || undefined}
               required
               data-testid="billing-last-name-input"
@@ -125,27 +133,37 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
           />
           <Input
             label="Phone"
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             name="phone"
             type="phone"
             autoComplete="phone"
             required
             defaultValue={billingAddress?.phone ?? customer?.phone ?? ""}
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             data-testid="billing-phone-input"
           />
           <Input
             label="Address"
             name="address_1"
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             defaultValue={billingAddress?.address_1 || undefined}
             required
             data-testid="billing-address-1-input"
           />
           <Input
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             label="Apartment, suite, etc."
             name="address_2"
             defaultValue={billingAddress?.address_2 || undefined}
             data-testid="billing-address-2-input"
           />
           <div className="grid grid-cols-[144px_1fr] gap-x-2">
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             <Input
               label="Postal code"
               name="postal_code"

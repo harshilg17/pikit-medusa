@@ -57,11 +57,15 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
       >
         <div className="grid grid-cols-2 gap-x-4">
           <Input
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             label="First name"
             name="first_name"
             required
             defaultValue={customer.first_name ?? ""}
             data-testid="first-name-input"
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           />
           <Input
             label="Last name"

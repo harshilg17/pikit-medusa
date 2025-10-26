@@ -112,6 +112,8 @@ const ShippingAddress = ({
       )}
       <div className="grid grid-cols-2 gap-4">
         <Input
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           label="First name"
           name="shipping_address.first_name"
           autoComplete="given-name"
@@ -119,6 +121,8 @@ const ShippingAddress = ({
           onChange={handleChange}
           required
           data-testid="shipping-first-name-input"
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
         />
         <Input
           label="Last name"
@@ -126,6 +130,8 @@ const ShippingAddress = ({
           autoComplete="family-name"
           value={formData["shipping_address.last_name"]}
           onChange={handleChange}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           required
           data-testid="shipping-last-name-input"
         />
@@ -133,12 +139,16 @@ const ShippingAddress = ({
           label="Address"
           name="shipping_address.address_1"
           autoComplete="address-line1"
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           value={formData["shipping_address.address_1"]}
           onChange={handleChange}
           required
           data-testid="shipping-address-input"
         />
         <Input
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           label="Company"
           name="shipping_address.company"
           value={formData["shipping_address.company"]}
@@ -146,6 +156,8 @@ const ShippingAddress = ({
           autoComplete="organization"
           data-testid="shipping-company-input"
         />
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
         <Input
           label="Postal code"
           name="shipping_address.postal_code"
@@ -162,6 +174,8 @@ const ShippingAddress = ({
           value={formData["shipping_address.city"]}
           onChange={handleChange}
           required
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           data-testid="shipping-city-input"
         />
         <CountrySelect
@@ -179,6 +193,8 @@ const ShippingAddress = ({
           autoComplete="address-level1"
           value={formData["shipping_address.province"]}
           onChange={handleChange}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           data-testid="shipping-province-input"
         />
       </div>
@@ -188,6 +204,8 @@ const ShippingAddress = ({
           name="same_as_billing"
           checked={checked}
           onChange={onChange}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           data-testid="billing-address-checkbox"
         />
       </div>

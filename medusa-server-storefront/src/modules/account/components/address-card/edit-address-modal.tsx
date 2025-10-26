@@ -127,6 +127,8 @@ const EditAddress: React.FC<EditAddressProps> = ({
         </Modal.Title>
         <form action={formAction}>
           <input type="hidden" name="addressId" value={address.id} />
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           <Modal.Body>
             <div className="grid grid-cols-1 gap-y-2">
               <div className="grid grid-cols-2 gap-x-2">
@@ -137,6 +139,8 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   autoComplete="given-name"
                   defaultValue={address.first_name || undefined}
                   data-testid="first-name-input"
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 />
                 <Input
                   label="Last name"
@@ -144,29 +148,39 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   required
                   autoComplete="family-name"
                   defaultValue={address.last_name || undefined}
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   data-testid="last-name-input"
                 />
               </div>
               <Input
                 label="Company"
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 name="company"
                 autoComplete="organization"
                 defaultValue={address.company || undefined}
                 data-testid="company-input"
               />
               <Input
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 label="Address"
                 name="address_1"
                 required
                 autoComplete="address-line1"
                 defaultValue={address.address_1 || undefined}
                 data-testid="address-1-input"
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               />
               <Input
                 label="Apartment, suite, etc."
                 name="address_2"
                 autoComplete="address-line2"
                 defaultValue={address.address_2 || undefined}
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                 data-testid="address-2-input"
               />
               <div className="grid grid-cols-[144px_1fr] gap-x-2">
@@ -174,6 +188,8 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   label="Postal code"
                   name="postal_code"
                   required
+                  {/* // added by PIKit: privacy notice */}
+                  <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   autoComplete="postal-code"
                   defaultValue={address.postal_code || undefined}
                   data-testid="postal-code-input"
@@ -187,6 +203,8 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   data-testid="city-input"
                 />
               </div>
+              {/* // added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
               <Input
                 label="Province / State"
                 name="province"

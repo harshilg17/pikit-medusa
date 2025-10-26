@@ -1,15 +1,10 @@
 {
   "totals": {
-    "all": 134,
-    "firstParty": 134,
+    "all": 10,
+    "firstParty": 10,
     "vendor": 0
   },
   "byClassification": [
-    {
-      "type": "collect",
-      "firstParty": 126,
-      "vendor": 0
-    },
     {
       "type": "transfer",
       "firstParty": 6,
@@ -19,16 +14,21 @@
       "type": "track",
       "firstParty": 2,
       "vendor": 0
+    },
+    {
+      "type": "collect",
+      "firstParty": 2,
+      "vendor": 0
     }
   ],
   "topPaths": [
     {
       "path": "src",
-      "count": 67
+      "count": 5
     },
     {
       "path": "medusa-server-storefront",
-      "count": 67
+      "count": 5
     }
   ]
 }

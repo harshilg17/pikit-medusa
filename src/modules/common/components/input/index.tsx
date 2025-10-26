@@ -40,6 +40,8 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
         )}
         <div className="flex relative z-0 w-full txt-compact-medium">
           <input
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             type={inputType}
             name={name}
             placeholder=" "

@@ -30,27 +30,37 @@ const Register = ({ setCurrentView }: Props) => {
       <form className="w-full flex flex-col" action={formAction}>
         <div className="flex flex-col w-full gap-y-2">
           <Input
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             label="First name"
             name="first_name"
             required
             autoComplete="given-name"
             data-testid="first-name-input"
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           />
           <Input
             label="Last name"
             name="last_name"
             required
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             autoComplete="family-name"
             data-testid="last-name-input"
           />
           <Input
             label="Email"
             name="email"
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             required
             type="email"
             autoComplete="email"
             data-testid="email-input"
           />
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           <Input
             label="Phone"
             name="phone"

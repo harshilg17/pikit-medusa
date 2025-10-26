@@ -31,6 +31,8 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
     <>
       <div className="grid grid-cols-2 gap-4">
         <Input
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           label="First name"
           name="billing_address.first_name"
           autoComplete="given-name"
@@ -38,6 +40,8 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           onChange={handleChange}
           required
           data-testid="billing-first-name-input"
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
         />
         <Input
           label="Last name"
@@ -45,6 +49,8 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           autoComplete="family-name"
           value={formData["billing_address.last_name"]}
           onChange={handleChange}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           required
           data-testid="billing-last-name-input"
         />
@@ -52,12 +58,16 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           label="Address"
           name="billing_address.address_1"
           autoComplete="address-line1"
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           value={formData["billing_address.address_1"]}
           onChange={handleChange}
           required
           data-testid="billing-address-input"
         />
         <Input
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           label="Company"
           name="billing_address.company"
           value={formData["billing_address.company"]}
@@ -65,6 +75,8 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           autoComplete="organization"
           data-testid="billing-company-input"
         />
+        {/* // added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
         <Input
           label="Postal code"
           name="billing_address.postal_code"
@@ -79,12 +91,16 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           name="billing_address.city"
           autoComplete="address-level2"
           value={formData["billing_address.city"]}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           onChange={handleChange}
         />
         <CountrySelect
           name="billing_address.country_code"
           autoComplete="country"
           region={cart?.region}
+          {/* // added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
           value={formData["billing_address.country_code"]}
           onChange={handleChange}
           required

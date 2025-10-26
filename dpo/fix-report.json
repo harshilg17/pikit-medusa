@@ -1,21 +1,150 @@
 {
-  "generatedAt": "2025-10-26T12:22:49.681Z",
-  "filesUpdated": 2,
-  "noticesAdded": 0,
-  "consentGatesInserted": 4,
+  "generatedAt": "2025-10-26T13:10:42.302Z",
+  "filesUpdated": 28,
+  "noticesAdded": 120,
+  "consentGatesInserted": 0,
   "entries": [
     {
-      "file": "src/lib/data/customer.ts",
-      "consentGatesInserted": 2
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 8
     },
     {
-      "file": "medusa-server-storefront/src/lib/data/customer.ts",
-      "consentGatesInserted": 2
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "src/modules/account/components/profile-email/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/profile-name/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "src/modules/account/components/profile-password/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 3
+    },
+    {
+      "file": "src/modules/account/components/profile-phone/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 5
+    },
+    {
+      "file": "src/modules/account/components/transfer-request-form/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/checkout/components/discount-code/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/checkout/components/billing_address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 8
+    },
+    {
+      "file": "src/modules/checkout/components/shipping-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "src/modules/common/components/input/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/address-card/add-address.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 8
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/login/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/address-card/edit-address-modal.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/profile-email/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/profile-billing-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/profile-name/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/profile-password/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 3
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/profile-phone/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/register/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 5
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/account/components/transfer-request-form/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/checkout/components/billing_address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 8
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/checkout/components/discount-code/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/checkout/components/shipping-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "medusa-server-storefront/src/modules/common/components/input/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
     }
   ],
-  "helperFiles": [
-    "src/privacy/consent.ts",
-    "medusa-server-storefront/src/privacy/consent.ts"
-  ],
+  "helperFiles": [],
   "dryRun": false
 }

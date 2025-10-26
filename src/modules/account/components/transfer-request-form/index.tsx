@@ -40,6 +40,8 @@ export default function TransferRequestForm() {
         >
           <div className="flex flex-col gap-y-2 w-full">
             <Input className="w-full" name="order_id" placeholder="Order ID" />
+            {/* // added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
             <SubmitButton
               variant="secondary"
               className="w-fit whitespace-nowrap self-end"

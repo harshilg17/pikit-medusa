@@ -78,6 +78,8 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
             <>
               <div className="flex w-full gap-x-2">
                 <Input
+                {/* // added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">We only use this data as described in our <a href="/privacy.html">privacy notice</a>.</p>
                   className="size-full"
                   id="promotion-input"
                   name="code"
