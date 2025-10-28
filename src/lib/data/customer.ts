@@ -90,7 +90,10 @@ export async function signup(_currentState: unknown, formData: FormData) {
       headers
     )
 
-    const loginToken = await sdk.auth.login("customer", "emailpass", {
+    // added by PIKit: consent gate
+    const proceed = await ensureConsent("transfer");
+    if (!proceed) return;
+    const loginToken = await sdk.auth.login("customer", "emailpass", { /* pikit: ignore */
       email: customerForm.email,
       password,
     })
