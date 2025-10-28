@@ -92,6 +92,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
   return (
     <form action={formAction} onReset={() => clearState()} className="w-full">
       <input type="hidden" name="addressId" value={billingAddress?.id} />
+      {/* added by PIKit: privacy notice */}
+      <p className="pikit-privacy-notice">
+        We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+      </p>
       <AccountInfo
         label="Billing address"
         currentInfo={currentInfo}

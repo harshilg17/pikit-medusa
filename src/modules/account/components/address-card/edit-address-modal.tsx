@@ -127,6 +127,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
         </Modal.Title>
         <form action={formAction}>
           <input type="hidden" name="addressId" value={address.id} />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Modal.Body>
             <div className="grid grid-cols-1 gap-y-2">
               <div className="grid grid-cols-2 gap-x-2">

@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2025-10-28T00:48:27.716Z",
+  "filesUpdated": 5,
+  "noticesAdded": 4,
+  "consentGatesInserted": 1,
+  "entries": [
+    {
+      "file": "src/lib/data/customer.ts",
+      "consentGatesInserted": 1,
+      "privacyNoticesAdded": 0
+    },
+    {
+      "file": ".pikit/demo/quickstart/app/page.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/common/components/input/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    }
+  ],
+  "helperFiles": [
+    "src/privacy/consent.ts"
+  ],
+  "dryRun": false
+}
