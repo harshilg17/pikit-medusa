@@ -55,3 +55,9 @@ dump.rdb
 /blob-report/
 /playwright/.cache/
 /playwright/.auth
+
+dpo/report.json
+dpo/summary.json
+.pikit/
+medusa-server/
+medusa-server-storefront/
