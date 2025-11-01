@@ -72,6 +72,10 @@ const AddAddress = ({
                   autoComplete="given-name"
                   data-testid="first-name-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
                 <Input
                   label="Last name"
                   name="last_name"
@@ -79,6 +83,10 @@ const AddAddress = ({
                   autoComplete="family-name"
                   data-testid="last-name-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
               </div>
               <Input
                 label="Company"
@@ -86,6 +94,10 @@ const AddAddress = ({
                 autoComplete="organization"
                 data-testid="company-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Address"
                 name="address_1"
@@ -93,12 +105,20 @@ const AddAddress = ({
                 autoComplete="address-line1"
                 data-testid="address-1-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Apartment, suite, etc."
                 name="address_2"
                 autoComplete="address-line2"
                 data-testid="address-2-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <div className="grid grid-cols-[144px_1fr] gap-x-2">
                 <Input
                   label="Postal code"
@@ -107,6 +127,10 @@ const AddAddress = ({
                   autoComplete="postal-code"
                   data-testid="postal-code-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
                 <Input
                   label="City"
                   name="city"
@@ -114,6 +138,10 @@ const AddAddress = ({
                   autoComplete="locality"
                   data-testid="city-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
               </div>
               <Input
                 label="Province / State"
@@ -121,6 +149,10 @@ const AddAddress = ({
                 autoComplete="address-level1"
                 data-testid="state-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <CountrySelect
                 region={region}
                 name="country_code"
@@ -128,6 +160,10 @@ const AddAddress = ({
                 autoComplete="country"
                 data-testid="country-select"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Phone"
                 name="phone"

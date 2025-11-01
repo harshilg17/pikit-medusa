@@ -1,0 +1,106 @@
+{
+  "generatedAt": "2025-11-01T14:57:11.971Z",
+  "filesUpdated": 17,
+  "noticesAdded": 63,
+  "consentGatesInserted": 1,
+  "entries": [
+    {
+      "file": "src/lib/data/customer.ts",
+      "consentGatesInserted": 1,
+      "privacyNoticesAdded": 0
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 10
+    },
+    {
+      "file": "src/modules/account/components/profile-billing-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 10
+    },
+    {
+      "file": "src/modules/account/components/profile-email/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/profile-name/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 2
+    },
+    {
+      "file": "src/modules/account/components/profile-password/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 3
+    },
+    {
+      "file": "src/modules/account/components/profile-phone/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/transfer-request-form/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/account/components/register/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 5
+    },
+    {
+      "file": "src/modules/checkout/components/billing_address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 8
+    },
+    {
+      "file": "src/modules/checkout/components/discount-code/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    },
+    {
+      "file": "src/modules/checkout/components/shipping-address/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 9
+    },
+    {
+      "file": "src/modules/common/components/input/index.tsx",
+      "consentGatesInserted": 0,
+      "privacyNoticesAdded": 1
+    }
+  ],
+  "helperFiles": [
+    "src/privacy/consent.ts"
+  ],
+  "dryRun": false,
+  "changedFiles": [
+    "dpo/",
+    "src/lib/data/customer.ts",
+    "src/modules/account/components/address-card/add-address.tsx",
+    "src/modules/account/components/address-card/edit-address-modal.tsx",
+    "src/modules/account/components/login/index.tsx",
+    "src/modules/account/components/profile-billing-address/index.tsx",
+    "src/modules/account/components/profile-email/index.tsx",
+    "src/modules/account/components/profile-name/index.tsx",
+    "src/modules/account/components/profile-password/index.tsx",
+    "src/modules/account/components/profile-phone/index.tsx",
+    "src/modules/account/components/register/index.tsx",
+    "src/modules/account/components/transfer-request-form/index.tsx",
+    "src/modules/checkout/components/billing_address/index.tsx",
+    "src/modules/checkout/components/discount-code/index.tsx",
+    "src/modules/checkout/components/shipping-address/index.tsx",
+    "src/modules/common/components/input/index.tsx",
+    "src/privacy/"
+  ]
+}

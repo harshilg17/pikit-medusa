@@ -39,6 +39,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           required
           data-testid="billing-first-name-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Last name"
           name="billing_address.last_name"
@@ -48,6 +52,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           required
           data-testid="billing-last-name-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Address"
           name="billing_address.address_1"
@@ -57,6 +65,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           required
           data-testid="billing-address-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Company"
           name="billing_address.company"
@@ -65,6 +77,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           autoComplete="organization"
           data-testid="billing-company-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Postal code"
           name="billing_address.postal_code"
@@ -74,6 +90,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           required
           data-testid="billing-postal-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="City"
           name="billing_address.city"
@@ -81,6 +101,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           value={formData["billing_address.city"]}
           onChange={handleChange}
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <CountrySelect
           name="billing_address.country_code"
           autoComplete="country"
@@ -90,6 +114,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           required
           data-testid="billing-country-select"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="State / Province"
           name="billing_address.province"
@@ -98,6 +126,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           onChange={handleChange}
           data-testid="billing-province-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Phone"
           name="billing_address.phone"

@@ -92,6 +92,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
   return (
     <form action={formAction} onReset={() => clearState()} className="w-full">
       <input type="hidden" name="addressId" value={billingAddress?.id} />
+      {/* added by PIKit: privacy notice */}
+      <p className="pikit-privacy-notice">
+        We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+      </p>
       <AccountInfo
         label="Billing address"
         currentInfo={currentInfo}
@@ -109,6 +113,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
               required
               data-testid="billing-first-name-input"
             />
+            {/* added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">
+              We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+            </p>
             <Input
               label="Last name"
               name="last_name"
@@ -116,6 +124,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
               required
               data-testid="billing-last-name-input"
             />
+            {/* added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">
+              We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+            </p>
           </div>
           <Input
             label="Company"
@@ -123,6 +135,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
             defaultValue={billingAddress?.company || undefined}
             data-testid="billing-company-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Phone"
             name="phone"
@@ -132,6 +148,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
             defaultValue={billingAddress?.phone ?? customer?.phone ?? ""}
             data-testid="billing-phone-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Address"
             name="address_1"
@@ -139,12 +159,20 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
             required
             data-testid="billing-address-1-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Apartment, suite, etc."
             name="address_2"
             defaultValue={billingAddress?.address_2 || undefined}
             data-testid="billing-address-2-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <div className="grid grid-cols-[144px_1fr] gap-x-2">
             <Input
               label="Postal code"
@@ -153,6 +181,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
               required
               data-testid="billing-postcal-code-input"
             />
+            {/* added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">
+              We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+            </p>
             <Input
               label="City"
               name="city"
@@ -160,6 +192,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
               required
               data-testid="billing-city-input"
             />
+            {/* added by PIKit: privacy notice */}
+            <p className="pikit-privacy-notice">
+              We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+            </p>
           </div>
           <Input
             label="Province"
@@ -167,6 +203,10 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({
             defaultValue={billingAddress?.province || undefined}
             data-testid="billing-province-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <NativeSelect
             name="country_code"
             defaultValue={billingAddress?.country_code || undefined}

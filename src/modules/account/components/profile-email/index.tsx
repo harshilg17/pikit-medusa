@@ -66,6 +66,10 @@ const ProfileEmail: React.FC<MyInformationProps> = ({ customer }) => {
             defaultValue={customer.email}
             data-testid="email-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
         </div>
       </AccountInfo>
     </form>
