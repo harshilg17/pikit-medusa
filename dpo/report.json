@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-01T18:48:10.132Z",
+  "generatedAt": "2025-11-01T19:11:11.542Z",
   "root": ".",
   "detectedFramework": {
     "framework": "auto",
@@ -242,177 +242,6 @@
       "source": "first-party"
     },
     {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 68,
-      "type": "name",
-      "snippet": "<Input\n                  label=\"First name\"\n                  name=\"first_name\"\n                  required\n                  autoComplete=\"given-name\"\n                  data-testid=\"first-name-input\"\n                />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 79,
-      "type": "name",
-      "snippet": "<Input\n                  label=\"Last name\"\n                  name=\"last_name\"\n                  required\n                  autoComplete=\"family-name\"\n                  data-testid=\"last-name-input\"\n                />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 91,
-      "type": "name",
-      "snippet": "<Input\n                label=\"Company\"\n                name=\"company\"\n                autoComplete=\"organization\"\n                data-testid=\"company-input\"\n              />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 101,
-      "type": "address",
-      "snippet": "<Input\n                label=\"Address\"\n                name=\"address_1\"\n                required\n                autoComplete=\"address-line1\"\n                data-testid=\"address-1-input\"\n              />",
-      "status": "non-compliant",
-      "reason": "Address: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Address: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 112,
-      "type": "name",
-      "snippet": "<Input\n                label=\"Apartment, suite, etc.\"\n                name=\"address_2\"\n                autoComplete=\"address-line2\"\n                data-testid=\"address-2-input\"\n              />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 123,
-      "type": "address",
-      "snippet": "<Input\n                  label=\"Postal code\"\n                  name=\"postal_code\"\n                  required\n                  autoComplete=\"postal-code\"\n                  data-testid=\"postal-code-input\"\n                />",
-      "status": "non-compliant",
-      "reason": "Address: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Address: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 134,
-      "type": "name",
-      "snippet": "<Input\n                  label=\"City\"\n                  name=\"city\"\n                  required\n                  autoComplete=\"locality\"\n                  data-testid=\"city-input\"\n                />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 146,
-      "type": "name",
-      "snippet": "<Input\n                label=\"Province / State\"\n                name=\"province\"\n                autoComplete=\"address-level1\"\n                data-testid=\"state-input\"\n              />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/address-card/add-address.tsx",
-      "line": 167,
-      "type": "phone",
-      "snippet": "<Input\n                label=\"Phone\"\n                name=\"phone\"\n                autoComplete=\"phone\"\n                data-testid=\"phone-input\"\n              />",
-      "status": "non-compliant",
-      "reason": "Phone: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
       "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
       "line": 129,
       "type": "name",
@@ -603,6 +432,177 @@
       "source": "first-party"
     },
     {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 68,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"First name\"\n                  name=\"first_name\"\n                  required\n                  autoComplete=\"given-name\"\n                  data-testid=\"first-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 79,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"Last name\"\n                  name=\"last_name\"\n                  required\n                  autoComplete=\"family-name\"\n                  data-testid=\"last-name-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 91,
+      "type": "name",
+      "snippet": "<Input\n                label=\"Company\"\n                name=\"company\"\n                autoComplete=\"organization\"\n                data-testid=\"company-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 101,
+      "type": "address",
+      "snippet": "<Input\n                label=\"Address\"\n                name=\"address_1\"\n                required\n                autoComplete=\"address-line1\"\n                data-testid=\"address-1-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Address: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Address: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 112,
+      "type": "name",
+      "snippet": "<Input\n                label=\"Apartment, suite, etc.\"\n                name=\"address_2\"\n                autoComplete=\"address-line2\"\n                data-testid=\"address-2-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 123,
+      "type": "address",
+      "snippet": "<Input\n                  label=\"Postal code\"\n                  name=\"postal_code\"\n                  required\n                  autoComplete=\"postal-code\"\n                  data-testid=\"postal-code-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Address: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Address: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 134,
+      "type": "name",
+      "snippet": "<Input\n                  label=\"City\"\n                  name=\"city\"\n                  required\n                  autoComplete=\"locality\"\n                  data-testid=\"city-input\"\n                />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 146,
+      "type": "name",
+      "snippet": "<Input\n                label=\"Province / State\"\n                name=\"province\"\n                autoComplete=\"address-level1\"\n                data-testid=\"state-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/address-card/add-address.tsx",
+      "line": 167,
+      "type": "phone",
+      "snippet": "<Input\n                label=\"Phone\"\n                name=\"phone\"\n                autoComplete=\"phone\"\n                data-testid=\"phone-input\"\n              />",
+      "status": "non-compliant",
+      "reason": "Phone: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
       "file": "src/modules/account/components/login/index.tsx",
       "line": 26,
       "type": "email",
@@ -631,6 +631,25 @@
       "problems": [
         {
           "problem": "Password: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/profile-email/index.tsx",
+      "line": 60,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            autoComplete=\"email\"\n            required\n            defaultValue={customer.email}\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Email: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
         }
       ],
       "classification": "collect",
@@ -869,15 +888,15 @@
       "source": "first-party"
     },
     {
-      "file": "src/modules/account/components/profile-email/index.tsx",
-      "line": 60,
-      "type": "email",
-      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            autoComplete=\"email\"\n            required\n            defaultValue={customer.email}\n            data-testid=\"email-input\"\n          />",
+      "file": "src/modules/account/components/profile-phone/index.tsx",
+      "line": 59,
+      "type": "phone",
+      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={customer.phone ?? \"\"}\n            data-testid=\"phone-input\"\n          />",
       "status": "non-compliant",
-      "reason": "Email: Collects personal data before recording valid consent.",
+      "reason": "Phone: Collects personal data before recording valid consent.",
       "problems": [
         {
-          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
         }
       ],
       "classification": "collect",
@@ -935,44 +954,6 @@
       "problems": [
         {
           "problem": "Password: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/profile-phone/index.tsx",
-      "line": 59,
-      "type": "phone",
-      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={customer.phone ?? \"\"}\n            data-testid=\"phone-input\"\n          />",
-      "status": "non-compliant",
-      "reason": "Phone: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP"
-      ],
-      "source": "first-party"
-    },
-    {
-      "file": "src/modules/account/components/transfer-request-form/index.tsx",
-      "line": 42,
-      "type": "name",
-      "snippet": "<Input className=\"w-full\" name=\"order_id\" placeholder=\"Order ID\" />",
-      "status": "non-compliant",
-      "reason": "Name: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
         }
       ],
       "classification": "collect",
@@ -1068,6 +1049,25 @@
       "problems": [
         {
           "problem": "Password: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP"
+      ],
+      "source": "first-party"
+    },
+    {
+      "file": "src/modules/account/components/transfer-request-form/index.tsx",
+      "line": 42,
+      "type": "name",
+      "snippet": "<Input className=\"w-full\" name=\"order_id\" placeholder=\"Order ID\" />",
+      "status": "non-compliant",
+      "reason": "Name: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Name: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
         }
       ],
       "classification": "collect",
