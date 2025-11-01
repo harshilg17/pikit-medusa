@@ -170,6 +170,10 @@ const AddAddress = ({
                 autoComplete="phone"
                 data-testid="phone-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
             </div>
             {formState.error && (
               <div

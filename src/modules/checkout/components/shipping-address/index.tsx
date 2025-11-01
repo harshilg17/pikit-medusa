@@ -209,6 +209,10 @@ const ShippingAddress = ({
           onChange={handleChange}
           data-testid="shipping-province-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
       </div>
       <div className="my-8">
         <Checkbox

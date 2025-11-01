@@ -1,7 +1,7 @@
 {
   "totals": {
-    "all": 73,
-    "firstParty": 73,
+    "all": 75,
+    "firstParty": 75,
     "vendor": 0
   },
   "byClassification": [
@@ -14,12 +14,17 @@
       "type": "transfer",
       "firstParty": 10,
       "vendor": 0
+    },
+    {
+      "type": "track",
+      "firstParty": 2,
+      "vendor": 0
     }
   ],
   "topPaths": [
     {
       "path": "src",
-      "count": 73
+      "count": 75
     }
   ]
 }
