@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2025-11-05T22:38:44.363Z",
-  "filesUpdated": 1,
+  "generatedAt": "2025-11-05T22:40:21.858Z",
+  "filesUpdated": 2,
   "noticesAdded": 0,
   "consentGatesInserted": 0,
   "entries": [],
   "helperFiles": [],
   "dryRun": false,
   "changedFiles": [
-    "dpo/fix-report.json"
+    "dpo/fix-report.json",
+    "dpo/report.json"
   ]
 }
