@@ -85,6 +85,10 @@ const DiscountCode: React.FC<DiscountCodeProps> = ({ cart }) => {
                   autoFocus={false}
                   data-testid="discount-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
                 <SubmitButton
                   variant="secondary"
                   data-testid="discount-apply-button"

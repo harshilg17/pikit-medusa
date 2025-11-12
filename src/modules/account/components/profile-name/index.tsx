@@ -63,6 +63,10 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
             defaultValue={customer.first_name ?? ""}
             data-testid="first-name-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Last name"
             name="last_name"
@@ -70,6 +74,10 @@ const ProfileName: React.FC<MyInformationProps> = ({ customer }) => {
             defaultValue={customer.last_name ?? ""}
             data-testid="last-name-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
         </div>
       </AccountInfo>
     </form>

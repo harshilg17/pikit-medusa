@@ -47,6 +47,10 @@ const ProfilePassword: React.FC<MyInformationProps> = ({ customer }) => {
             type="password"
             data-testid="old-password-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="New password"
             type="password"
@@ -54,6 +58,10 @@ const ProfilePassword: React.FC<MyInformationProps> = ({ customer }) => {
             required
             data-testid="new-password-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Confirm password"
             type="password"
@@ -61,6 +69,10 @@ const ProfilePassword: React.FC<MyInformationProps> = ({ customer }) => {
             required
             data-testid="confirm-password-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
         </div>
       </AccountInfo>
     </form>
