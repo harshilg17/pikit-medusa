@@ -32,6 +32,10 @@ const Login = ({ setCurrentView }: Props) => {
             required
             data-testid="email-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Input
             label="Password"
             name="password"
@@ -40,6 +44,10 @@ const Login = ({ setCurrentView }: Props) => {
             required
             data-testid="password-input"
           />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
         </div>
         <ErrorMessage error={message} data-testid="login-error-message" />
         <SubmitButton data-testid="sign-in-button" className="w-full mt-6">

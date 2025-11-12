@@ -1,3 +1,4 @@
+import { ensureConsent } from '../../privacy/consent';
 "use server"
 
 import { sdk } from "@lib/config"
@@ -69,7 +70,10 @@ export async function signup(_currentState: unknown, formData: FormData) {
   }
 
   try {
-    const token = await sdk.auth.register("customer", "emailpass", {
+    // added by PIKit: consent gate
+    const ok = await ensureConsent("transfer");
+    if (!ok) return;
+    const token = await sdk.auth.register("customer", "emailpass", { /* pikit: ignore */
       email: customerForm.email,
       password: password,
     })
@@ -86,7 +90,10 @@ export async function signup(_currentState: unknown, formData: FormData) {
       headers
     )
 
-    const loginToken = await sdk.auth.login("customer", "emailpass", {
+    // added by PIKit: consent gate
+    const ok = await ensureConsent("transfer");
+    if (!ok) return;
+    const loginToken = await sdk.auth.login("customer", "emailpass", { /* pikit: ignore */
       email: customerForm.email,
       password,
     })

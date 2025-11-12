@@ -120,6 +120,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-first-name-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Last name"
           name="shipping_address.last_name"
@@ -129,6 +133,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-last-name-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Address"
           name="shipping_address.address_1"
@@ -138,6 +146,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-address-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Company"
           name="shipping_address.company"
@@ -146,6 +158,10 @@ const ShippingAddress = ({
           autoComplete="organization"
           data-testid="shipping-company-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Postal code"
           name="shipping_address.postal_code"
@@ -155,6 +171,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-postal-code-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="City"
           name="shipping_address.city"
@@ -164,6 +184,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-city-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <CountrySelect
           name="shipping_address.country_code"
           autoComplete="country"
@@ -173,6 +197,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-country-select"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="State / Province"
           name="shipping_address.province"
@@ -181,6 +209,10 @@ const ShippingAddress = ({
           onChange={handleChange}
           data-testid="shipping-province-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
       </div>
       <div className="my-8">
         <Checkbox
@@ -203,6 +235,10 @@ const ShippingAddress = ({
           required
           data-testid="shipping-email-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
         <Input
           label="Phone"
           name="shipping_address.phone"
@@ -211,6 +247,10 @@ const ShippingAddress = ({
           onChange={handleChange}
           data-testid="shipping-phone-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
       </div>
     </>
   )

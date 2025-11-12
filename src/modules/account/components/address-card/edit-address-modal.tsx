@@ -127,6 +127,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
         </Modal.Title>
         <form action={formAction}>
           <input type="hidden" name="addressId" value={address.id} />
+          {/* added by PIKit: privacy notice */}
+          <p className="pikit-privacy-notice">
+            We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+          </p>
           <Modal.Body>
             <div className="grid grid-cols-1 gap-y-2">
               <div className="grid grid-cols-2 gap-x-2">
@@ -138,6 +142,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   defaultValue={address.first_name || undefined}
                   data-testid="first-name-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
                 <Input
                   label="Last name"
                   name="last_name"
@@ -146,6 +154,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   defaultValue={address.last_name || undefined}
                   data-testid="last-name-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
               </div>
               <Input
                 label="Company"
@@ -154,6 +166,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.company || undefined}
                 data-testid="company-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Address"
                 name="address_1"
@@ -162,6 +178,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.address_1 || undefined}
                 data-testid="address-1-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Apartment, suite, etc."
                 name="address_2"
@@ -169,6 +189,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.address_2 || undefined}
                 data-testid="address-2-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <div className="grid grid-cols-[144px_1fr] gap-x-2">
                 <Input
                   label="Postal code"
@@ -178,6 +202,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   defaultValue={address.postal_code || undefined}
                   data-testid="postal-code-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
                 <Input
                   label="City"
                   name="city"
@@ -186,6 +214,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                   defaultValue={address.city || undefined}
                   data-testid="city-input"
                 />
+                {/* added by PIKit: privacy notice */}
+                <p className="pikit-privacy-notice">
+                  We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+                </p>
               </div>
               <Input
                 label="Province / State"
@@ -194,6 +226,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.province || undefined}
                 data-testid="state-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <CountrySelect
                 name="country_code"
                 region={region}
@@ -202,6 +238,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.country_code || undefined}
                 data-testid="country-select"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
               <Input
                 label="Phone"
                 name="phone"
@@ -209,6 +249,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.phone || undefined}
                 data-testid="phone-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
             </div>
             {formState.error && (
               <div className="text-rose-500 text-small-regular py-2">
