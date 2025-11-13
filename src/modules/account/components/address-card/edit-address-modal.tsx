@@ -249,6 +249,10 @@ const EditAddress: React.FC<EditAddressProps> = ({
                 defaultValue={address.phone || undefined}
                 data-testid="phone-input"
               />
+              {/* added by PIKit: privacy notice */}
+              <p className="pikit-privacy-notice">
+                We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+              </p>
             </div>
             {formState.error && (
               <div className="text-rose-500 text-small-regular py-2">

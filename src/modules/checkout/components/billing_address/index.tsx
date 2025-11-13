@@ -138,6 +138,10 @@ const BillingAddress = ({ cart }: { cart: HttpTypes.StoreCart | null }) => {
           onChange={handleChange}
           data-testid="billing-phone-input"
         />
+        {/* added by PIKit: privacy notice */}
+        <p className="pikit-privacy-notice">
+          We only use this data as described in our <a href="/privacy.html">privacy notice</a>.
+        </p>
       </div>
     </>
   )
