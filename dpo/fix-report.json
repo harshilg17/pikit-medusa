@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-13T20:53:04.580Z",
+  "generatedAt": "2025-11-13T21:06:45.063Z",
   "filesUpdated": 1,
   "noticesAdded": 0,
   "consentGatesInserted": 0,
@@ -7,6 +7,6 @@
   "helperFiles": [],
   "dryRun": false,
   "changedFiles": [
-    "dpo/report.json"
+    "dpo/fix-report.json"
   ]
 }
