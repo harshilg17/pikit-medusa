@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2025-11-13T20:40:53.489Z",
+  "generatedAt": "2025-11-13T20:44:24.224Z",
   "root": ".",
   "detectedFramework": {
     "framework": "nextjs",
@@ -8,7 +8,7 @@
   "totals": {
     "filesScanned": 203,
     "findings": 75,
-    "nonCompliant": 72,
+    "nonCompliant": 71,
     "analytics": 0,
     "storage": 2
   },
@@ -96,14 +96,14 @@
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 93,
+      "line": 96,
       "type": "transfer:email,password",
-      "snippet": "sdk.auth.login(\"customer\", \"emailpass\", {\n      email: customerForm.email,\n      password,\n    })",
-      "status": "non-compliant",
-      "reason": "Email, password: Transfers personal data to backend services before consent.",
+      "snippet": "sdk.auth.login(\"customer\", \"emailpass\", { /* pikit: ignore */\n      email: customerForm.email,\n      password,\n    })",
+      "status": "compliant",
+      "reason": "Suppressed via // pikit: ignore",
       "problems": [
         {
-          "problem": "Email, password: Transferring personal data requires a lawful basis (GDPR Art. 6, DPDP Sec. 7)."
+          "problem": "Suppressed via // pikit: ignore"
         }
       ],
       "classification": "transfer",
@@ -117,13 +117,13 @@
       "themes": [
         "data-transfer-governance"
       ],
-      "agentSummary": "Email, password: Transfers personal data to backend services before consent.",
+      "agentSummary": "Suppressed via // pikit: ignore",
       "recommendedAction": "Wrap outbound requests with consent checks or defer calls until a lawful basis is confirmed.",
       "grouping": "transfer"
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 116,
+      "line": 119,
       "type": "transfer:email,password",
       "snippet": "sdk.auth\n      .login(\"customer\", \"emailpass\", { email, password })\n      .then(async (token) => {\n        await setAuthToken(token as string)\n        const customerCacheTag = await getCacheTag(\"customers\")\n        revalidateTag(customerCacheTag)\n      })",
       "status": "non-compliant",
@@ -150,7 +150,7 @@
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 116,
+      "line": 119,
       "type": "transfer:email,password",
       "snippet": "sdk.auth\n      .login(\"customer\", \"emailpass\", { email, password })",
       "status": "non-compliant",
@@ -177,7 +177,7 @@
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 191,
+      "line": 194,
       "type": "transfer:address",
       "snippet": "sdk.store.customer\n    .createAddress(address, {}, headers)",
       "status": "non-compliant",
@@ -204,7 +204,7 @@
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 210,
+      "line": 213,
       "type": "transfer:address",
       "snippet": "sdk.store.customer\n    .deleteAddress(addressId, headers)",
       "status": "non-compliant",
@@ -231,7 +231,7 @@
     },
     {
       "file": "src/lib/data/customer.ts",
-      "line": 255,
+      "line": 258,
       "type": "transfer:address",
       "snippet": "sdk.store.customer\n    .updateAddress(addressId, address, {}, headers)",
       "status": "non-compliant",
@@ -581,60 +581,6 @@
       "grouping": "collect"
     },
     {
-      "file": "src/modules/account/components/login/index.tsx",
-      "line": 26,
-      "type": "email",
-      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            title=\"Enter a valid email address.\"\n            autoComplete=\"email\"\n            required\n            data-testid=\"email-input\"\n          />",
-      "status": "non-compliant",
-      "reason": "Email: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP",
-        "CCPA/CPRA"
-      ],
-      "source": "first-party",
-      "severity": "medium",
-      "themes": [
-        "consent-required-data-collection"
-      ],
-      "agentSummary": "Email: Collects personal data before recording valid consent.",
-      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
-      "grouping": "collect"
-    },
-    {
-      "file": "src/modules/account/components/login/index.tsx",
-      "line": 39,
-      "type": "password",
-      "snippet": "<Input\n            label=\"Password\"\n            name=\"password\"\n            type=\"password\"\n            autoComplete=\"current-password\"\n            required\n            data-testid=\"password-input\"\n          />",
-      "status": "non-compliant",
-      "reason": "Password: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Password: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP",
-        "CCPA/CPRA"
-      ],
-      "source": "first-party",
-      "severity": "medium",
-      "themes": [
-        "consent-required-data-collection"
-      ],
-      "agentSummary": "Password: Collects personal data before recording valid consent.",
-      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
-      "grouping": "collect"
-    },
-    {
       "file": "src/modules/account/components/address-card/edit-address-modal.tsx",
       "line": 129,
       "type": "name",
@@ -901,6 +847,87 @@
         "consent-required-data-collection"
       ],
       "agentSummary": "Phone: Collects personal data before recording valid consent.",
+      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
+      "grouping": "collect"
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "line": 26,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            title=\"Enter a valid email address.\"\n            autoComplete=\"email\"\n            required\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Email: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP",
+        "CCPA/CPRA"
+      ],
+      "source": "first-party",
+      "severity": "medium",
+      "themes": [
+        "consent-required-data-collection"
+      ],
+      "agentSummary": "Email: Collects personal data before recording valid consent.",
+      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
+      "grouping": "collect"
+    },
+    {
+      "file": "src/modules/account/components/login/index.tsx",
+      "line": 39,
+      "type": "password",
+      "snippet": "<Input\n            label=\"Password\"\n            name=\"password\"\n            type=\"password\"\n            autoComplete=\"current-password\"\n            required\n            data-testid=\"password-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Password: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Password: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP",
+        "CCPA/CPRA"
+      ],
+      "source": "first-party",
+      "severity": "medium",
+      "themes": [
+        "consent-required-data-collection"
+      ],
+      "agentSummary": "Password: Collects personal data before recording valid consent.",
+      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
+      "grouping": "collect"
+    },
+    {
+      "file": "src/modules/account/components/profile-email/index.tsx",
+      "line": 60,
+      "type": "email",
+      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            autoComplete=\"email\"\n            required\n            defaultValue={customer.email}\n            data-testid=\"email-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Email: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP",
+        "CCPA/CPRA"
+      ],
+      "source": "first-party",
+      "severity": "medium",
+      "themes": [
+        "consent-required-data-collection"
+      ],
+      "agentSummary": "Email: Collects personal data before recording valid consent.",
       "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
       "grouping": "collect"
     },
@@ -1175,33 +1202,6 @@
       "grouping": "collect"
     },
     {
-      "file": "src/modules/account/components/profile-email/index.tsx",
-      "line": 60,
-      "type": "email",
-      "snippet": "<Input\n            label=\"Email\"\n            name=\"email\"\n            type=\"email\"\n            autoComplete=\"email\"\n            required\n            defaultValue={customer.email}\n            data-testid=\"email-input\"\n          />",
-      "status": "non-compliant",
-      "reason": "Email: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Email: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP",
-        "CCPA/CPRA"
-      ],
-      "source": "first-party",
-      "severity": "medium",
-      "themes": [
-        "consent-required-data-collection"
-      ],
-      "agentSummary": "Email: Collects personal data before recording valid consent.",
-      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
-      "grouping": "collect"
-    },
-    {
       "file": "src/modules/account/components/profile-name/index.tsx",
       "line": 59,
       "type": "name",
@@ -1252,6 +1252,33 @@
         "consent-required-data-collection"
       ],
       "agentSummary": "Name: Collects personal data before recording valid consent.",
+      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
+      "grouping": "collect"
+    },
+    {
+      "file": "src/modules/account/components/profile-phone/index.tsx",
+      "line": 59,
+      "type": "phone",
+      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={customer.phone ?? \"\"}\n            data-testid=\"phone-input\"\n          />",
+      "status": "non-compliant",
+      "reason": "Phone: Collects personal data before recording valid consent.",
+      "problems": [
+        {
+          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
+        }
+      ],
+      "classification": "collect",
+      "regulations": [
+        "GDPR",
+        "DPDP",
+        "CCPA/CPRA"
+      ],
+      "source": "first-party",
+      "severity": "medium",
+      "themes": [
+        "consent-required-data-collection"
+      ],
+      "agentSummary": "Phone: Collects personal data before recording valid consent.",
       "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
       "grouping": "collect"
     },
@@ -1333,33 +1360,6 @@
         "consent-required-data-collection"
       ],
       "agentSummary": "Password: Collects personal data before recording valid consent.",
-      "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
-      "grouping": "collect"
-    },
-    {
-      "file": "src/modules/account/components/profile-phone/index.tsx",
-      "line": 59,
-      "type": "phone",
-      "snippet": "<Input\n            label=\"Phone\"\n            name=\"phone\"\n            type=\"phone\"\n            autoComplete=\"phone\"\n            required\n            defaultValue={customer.phone ?? \"\"}\n            data-testid=\"phone-input\"\n          />",
-      "status": "non-compliant",
-      "reason": "Phone: Collects personal data before recording valid consent.",
-      "problems": [
-        {
-          "problem": "Phone: Collecting personal data requires explicit consent (GDPR Art. 6, DPDP Sec. 4)."
-        }
-      ],
-      "classification": "collect",
-      "regulations": [
-        "GDPR",
-        "DPDP",
-        "CCPA/CPRA"
-      ],
-      "source": "first-party",
-      "severity": "medium",
-      "themes": [
-        "consent-required-data-collection"
-      ],
-      "agentSummary": "Phone: Collects personal data before recording valid consent.",
       "recommendedAction": "Gate personal-data collection behind explicit consent and minimise stored fields.",
       "grouping": "collect"
     },
@@ -1959,7 +1959,7 @@
     },
     {
       "file": "src/modules/checkout/components/shipping-address/index.tsx",
-      "line": 223,
+      "line": 227,
       "type": "email",
       "snippet": "<Input\n          label=\"Email\"\n          name=\"email\"\n          type=\"email\"\n          title=\"Enter a valid email address.\"\n          autoComplete=\"email\"\n          value={formData.email}\n          onChange={handleChange}\n          required\n          data-testid=\"shipping-email-input\"\n        />",
       "status": "non-compliant",
@@ -1986,7 +1986,7 @@
     },
     {
       "file": "src/modules/checkout/components/shipping-address/index.tsx",
-      "line": 238,
+      "line": 242,
       "type": "phone",
       "snippet": "<Input\n          label=\"Phone\"\n          name=\"shipping_address.phone\"\n          autoComplete=\"tel\"\n          value={formData[\"shipping_address.phone\"]}\n          onChange={handleChange}\n          data-testid=\"shipping-phone-input\"\n        />",
       "status": "non-compliant",
